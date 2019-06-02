@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+        PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+
+<generatorConfiguration>
+    <!-- 引入配置文件 -->
+    <properties resource="application-dev.properties"/>
+    <!-- 引入驱动 -->
+    <classPathEntry location="D:\mysql-connector-java-8.0.16\mysql-connector-java-8.0.16.jar" />
+    <!-- 生成不包括BySimple的方法 -->
+    <context id="Mysql" targetRuntime="MyBatis3Simple">
+        <commentGenerator>
+            <property name="suppressDate" value="true" />
+            <!-- 是否去除自动生成的注释 true：是 ： false:否 -->
+            <property name="suppressAllComments" value="true" />
+        </commentGenerator>
+
+        <jdbcConnection driverClass="${spring.datasource.driver-class-name}"
+                        connectionURL="${spring.datasource.url}"
+                        userId="${spring.datasource.username}"
+                        password="${spring.datasource.password}">
+        </jdbcConnection>
+
+        <javaModelGenerator targetPackage="com.commerce.eohno.pojo" targetProject="src/main/java"></javaModelGenerator>
+
+        <sqlMapGenerator targetPackage="mapper"  targetProject="src/main/resources"></sqlMapGenerator>
+
+        <javaClientGenerator type="XMLMAPPER" targetPackage="com.commerce.eohno.mapper"  targetProject="src/main/java"></javaClientGenerator>
+
+        <table tableName="tb_user" domainObjectName="User" >
+            <generatedKey column="id" sqlStatement="MySql" identity="true" />
+        </table>
+
+    </context>
+</generatorConfiguration>
