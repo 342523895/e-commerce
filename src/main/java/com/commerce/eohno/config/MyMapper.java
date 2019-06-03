@@ -1,4 +1,4 @@
-package com.commerce.eohno.mapper;
+package com.commerce.eohno.config;
 
 import tk.mybatis.mapper.common.Mapper;
 import tk.mybatis.mapper.common.MySqlMapper;

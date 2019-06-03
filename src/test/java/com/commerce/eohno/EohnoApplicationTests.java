@@ -24,7 +24,7 @@ public class EohnoApplicationTests {
 		PageHelper.startPage(1,10);
 		List<User> list = userMapper.selectAll();
 		PageInfo pageInfo = new PageInfo(list);
-		System.out.println();
+		System.out.println(list.size());
 	}
 
 }
