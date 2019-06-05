@@ -18,6 +18,7 @@ public class EohnoApplicationTests {
 
 	@Autowired
 	UserMapper userMapper;
+
 	@Test
 	public void contextLoads() {
 
@@ -26,5 +27,4 @@ public class EohnoApplicationTests {
 		PageInfo pageInfo = new PageInfo(list);
 		System.out.println(list.size());
 	}
-
 }

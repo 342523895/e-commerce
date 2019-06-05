@@ -20,6 +20,7 @@
 		<mybatis.version>2.0.1</mybatis.version>
 		<tk.mapper.version>1.2.3</tk.mapper.version>
 		<pagehelper.version>1.2.11</pagehelper.version>
+		<shiro.version>1.4.1</shiro.version>
 	</properties>
 
 	<dependencies>
@@ -48,6 +49,13 @@
 			<artifactId>mybatis-spring-boot-starter</artifactId>
 			<version>${mybatis.version}</version>
 		</dependency>
+		<!-- shiro -->
+		<dependency>
+			<groupId>org.apache.shiro</groupId>
+			<artifactId>shiro-spring-boot-starter</artifactId>
+			<version>${shiro.version}</version>
+		</dependency>
+		<!-- 通用mapper -->
 		<dependency>
 			<groupId>tk.mybatis</groupId>
 			<artifactId>mapper-spring-boot-starter</artifactId>

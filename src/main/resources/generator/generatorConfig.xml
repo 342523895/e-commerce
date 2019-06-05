@@ -40,32 +40,32 @@
 
         <javaClientGenerator type="XMLMAPPER" targetPackage="com.commerce.eohno.mapper"  targetProject="src/main/java"></javaClientGenerator>
 
-        <table tableName="tb_content" domainObjectName="Content" >
+        <table tableName="tb_rights" domainObjectName="Rights" >
             <generatedKey column="id" sqlStatement="MySql" identity="true" />
         </table>
-        <table tableName="tb_content_category" domainObjectName="ContentCategory" >
+        <table tableName="tb_role" domainObjectName="Role" >
             <generatedKey column="id" sqlStatement="MySql" identity="true" />
         </table>
-        <table tableName="tb_item" domainObjectName="Item" >
+        <table tableName="tb_user_role" domainObjectName="UserRole" >
             <generatedKey column="id" sqlStatement="MySql" identity="true" />
         </table>
-        <table tableName="tb_item_cat" domainObjectName="ItemCat" >
+        <table tableName="tb_role_rights" domainObjectName="RoleRights" >
             <generatedKey column="id" sqlStatement="MySql" identity="true" />
         </table>
-        <table tableName="tb_item_desc" domainObjectName="ItemDesc" >
+<!--        <table tableName="tb_item_desc" domainObjectName="ItemDesc" >-->
 <!--            <generatedKey column="id" sqlStatement="MySql" identity="true" />-->
-        </table>
-        <table tableName="tb_item_param" domainObjectName="ItemParam" >
-            <generatedKey column="id" sqlStatement="MySql" identity="true" />
-        </table>
-        <table tableName="tb_item_param_item" domainObjectName="ItemParamItem" >
-            <generatedKey column="id" sqlStatement="MySql" identity="true" />
-        </table>
-        <table tableName="tb_order_item" domainObjectName="OrderItem" >
-            <generatedKey column="id" sqlStatement="MySql" identity="true" />
-        </table>
-        <table tableName="tb_order_shipping" domainObjectName="OrderShipping" >
+<!--        </table>-->
+<!--        <table tableName="tb_item_param" domainObjectName="ItemParam" >-->
+<!--            <generatedKey column="id" sqlStatement="MySql" identity="true" />-->
+<!--        </table>-->
+<!--        <table tableName="tb_item_param_item" domainObjectName="ItemParamItem" >-->
+<!--            <generatedKey column="id" sqlStatement="MySql" identity="true" />-->
+<!--        </table>-->
+<!--        <table tableName="tb_order_item" domainObjectName="OrderItem" >-->
+<!--            <generatedKey column="id" sqlStatement="MySql" identity="true" />-->
+<!--        </table>-->
+<!--        <table tableName="tb_order_shipping" domainObjectName="OrderShipping" >-->
 <!--        <generatedKey column="id" sqlStatement="MySql" identity="true" />-->
-    </table>
+<!--    </table>-->
     </context>
 </generatorConfiguration>
