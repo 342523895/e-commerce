@@ -3,7 +3,6 @@ package com.commerce.eohno.modules.sys.dao;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.commerce.eohno.modules.sys.entity.SysRoleEntity;
 import org.springframework.stereotype.Repository;
-
 import java.util.List;
 
 /**
